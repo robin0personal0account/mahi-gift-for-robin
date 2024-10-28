@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Memories</title>
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f9f1f0, #f0e2e8);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: #e0b4c8;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .video-section h2 {
+      font-size: 1.8em;
+      color: #e85a71;
+    }
+    .video-section video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      outline: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1em;
+      background-color: #f0e2e8;
+      color: #666;
+      border-radius: 0 0 12px 12px;
+      width: 100%;
+    }
+    footer p {
+      margin: 0;
+      color: #8a8a8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Birthday Memories</h1>
+  </header>
+
+  <div class="container">
+    <div class="gallery">
+      <img src="img/1.jpeg" alt="Gift Image 1">
+      <img src="img/2.jpeg" alt="Gift Image 2">
+      <img src="img/3.jpeg" alt="Gift Image 3">
+    </div>
+
+    <div class="video-section">
+      <h2>Special Video Gift</h2>
+      <video controls>
+        <source src="img/4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer>
+    <p>Thanks, Mahi, for making my day unforgettable! 🎉</p>
+  </footer>
+</body>
+</html>
